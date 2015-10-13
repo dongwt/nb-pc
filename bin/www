@@ -7,7 +7,7 @@
 var app = require('../app');
 var debug = require('debug')('myApp:server');
 var http = require('http');
-
+var logger = require('../config/log').logger("www");
 /**
  * Get port from environment and store in Express.
  */
@@ -86,5 +86,5 @@ function onListening() {
   var bind = typeof addr === 'string'
     ? 'pipe ' + addr
     : 'port ' + addr.port;
-  console.log('Listening on ' + bind);
+  logger.info('Listening on ' + bind);
 }

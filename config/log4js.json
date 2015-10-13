@@ -1,0 +1,16 @@
+{
+  "appenders": [
+    {
+      "type": "console"
+    },
+    {
+      "type": "dateFile",
+      "filename": "logs/ykb.log",
+      "pattern": "-yyyy-MM-dd",
+      "alwaysIncludePattern": true
+    }
+  ],
+  "levels": {
+  		"config": "DEBUG"
+  }
+}
