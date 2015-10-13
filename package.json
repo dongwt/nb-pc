@@ -12,8 +12,11 @@
     "ejs": "~2.3.3",
     "express": "~4.13.1",
     "express-partials": "^0.3.0",
+    "file-stream-rotator": "0.0.6",
+    "fs": "0.0.2",
     "log4js": "^0.6.27",
     "morgan": "~1.6.1",
+    "node-uuid": "^1.4.3",
     "serve-favicon": "~2.3.0"
   }
 }
