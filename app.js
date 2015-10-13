@@ -19,9 +19,17 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 
-app.get('/', function(req, res, next) {
-    res.send('respond with a resource');
-});
+//引入路由
+
+var rtIndex = require('./routes/index');//首页路由
+app.use('/', rtIndex);
+
+
+
+
+
+
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
