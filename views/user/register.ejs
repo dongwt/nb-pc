@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <%- include  ../common/include-meta.ejs%>
-    <%- include  ../common/include-css.ejs%>
-    <%- include  ../common/include-js.ejs%>
+    <%- include ../common/include-meta.ejs %>
+    <%- include ../common/include-css.ejs %>
+    <%- include ../common/include-js.ejs %>
     <title>注册|奶爸</title>
 
     <script type="text/javascript">
@@ -11,8 +11,75 @@
     </script>
 
 </head>
-<body class="nb-index-bg">
-<%- include  ../common/header.ejs%>
-<%- include  ../common/footer.ejs%>
+<body class="theme-bg-color font-color-white">
+<div class="container-fluid">
+    <div class="page-header">
+        <div class="row">
+            <div class="col-xs-4">
+                <div class="pull-right">
+                    <a href="/"><img style="display: inline-block;"  src="/img/brand.png"/></a>
+                    <span class="site-delimiter"></span>
+                    <span style="display: inline-block; font-size: 18px;line-height: 30px;">注册奶爸账号</span>
+                </div>
+            </div>
+            <div class="col-xs-6">
+                <div class="pull-right">
+                    <span style="margin-right: 10px;">已有奶爸账号</span>
+                    <a href="/user/login" class="btn btn-danger active" role="button">登录</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row nb-content">
+        <div class="col-xs-6 col-xs-offset-1">
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label class="col-xs-3 control-label">邮箱</label>
+                    <div class="col-xs-5">
+                        <input type="email" class="form-control"  placeholder="邮箱">
+                    </div>
+                    <div class="col-xs-4">
+                        <label class="nb-form-error control-label"></label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label  class="col-xs-3 control-label">邮箱验证码</label>
+                    <div class="col-xs-5">
+                        <input type="password" class="form-control"  placeholder="邮箱验证码">
+                    </div>
+                    <div class="col-xs-4">
+                        <label class="nb-form-error control-label"></label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label  class="col-xs-3 control-label">创建密码</label>
+                    <div class="col-xs-5">
+                        <input type="password" class="form-control"  placeholder="创建密码">
+                    </div>
+                    <div class="col-xs-4">
+                        <label class="nb-form-error control-label"></label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label  class="col-xs-3 control-label">确认密码</label>
+                    <div class="col-xs-5">
+                        <input type="password" class="form-control"  placeholder="确认密码">
+                    </div>
+                    <div class="col-xs-4">
+                        <label class="nb-form-error control-label"></label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-xs-offset-3 col-xs-5">
+                        <button type="submit" class="btn btn-danger btn-block">注册</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<%- include ../common/footer.ejs %>
 </body>
 </html>
