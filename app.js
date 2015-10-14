@@ -22,9 +22,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 //引入路由
 
 var rtIndex = require('./routes/index');//首页路由
+var rtUser = require('./routes/user');//用户路由
 var rtError = require('./routes/error');//错误处理路由
 app.use('/', rtIndex);
 app.use('/error', rtError);
+app.use('/user', rtUser);
 
 
 
