@@ -91,3 +91,69 @@ html, body {
 }
 
 
+/**begin 找回密码**/
+
+.steps-bar {
+    background: #dedede;
+    border-radius: 2px;
+    height: 29px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.steps-bar .step--post {
+    color: #999;
+}
+
+.steps-bar .step {
+    position: relative;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 30px;
+    _line-height: 29px;
+    text-align: center;
+    color: #666;
+    float: left;
+    min-width: 100px;
+}
+
+.steps-bar .step--current {
+    color: #fff;
+    background: #ff8900;
+}
+
+li {
+    list-style: none;
+}
+
+
+.steps-bar .arrow__background, .steps-bar .arrow__foreground {
+    position: absolute;
+    top: 0;
+    _top: -1px;
+    right: -15px;
+    width: 0;
+    height: 0;
+    border-width: 15px 0 15px 15px;
+    border-style: dashed dashed dashed solid;
+    border-color: transparent transparent transparent #dedede;
+    font-size: 0;
+    line-height: 0;
+    z-index: 1;
+}
+
+.steps-bar .step--current .arrow__foreground {
+    border-left-color: #ff8900;
+}
+
+.steps-bar .arrow__background {
+    right: -17px;
+    top: -2px;
+    _top: -3px;
+    border-left-color: #FFF;
+    border-width: 17px 0 17px 17px;
+}
+
+/**end 找回密码**/

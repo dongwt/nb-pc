@@ -15,4 +15,11 @@ router.get('/register', function(req, res, next) {
   res.render('user/register', {});
 });
 
+/**
+ * 忘记密码
+ */
+router.get('/forget/password', function(req, res, next) {
+  res.render('user/forget-password', {});
+});
+
 module.exports = router;
